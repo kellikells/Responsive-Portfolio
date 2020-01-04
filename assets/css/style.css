@@ -12,7 +12,7 @@ body {
 
 /* general */
 
-.container {
+.container-fluid {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -220,10 +220,6 @@ input[type=submit] {
 
 /* desktop */
 @media screen and (max-width: 980px) {
-  /* #masthead {
-    padding: 0 30px 0 30px;
-  } */
-
   #masthead {
     width: 100%;
   }
@@ -238,8 +234,20 @@ input[type=submit] {
 }
 
 /* tablet */
-/* @media screen and (max-width: 768px) { */
-/* } */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  
+  .main-section {
+    width: 100%;
+
+  }
+}
+
+
+
 
 /* iphone landscape */
 /* @media screen and (max-width: 640px) { */
