@@ -218,6 +218,7 @@ input[type=submit] {
 
 /*------ CSS animations below */
 
+/* this animation only occurs on contact page */
 @keyframes changeBorder {
   from {border: 0 none;}
   to {border: 4px yellow dotted;}
@@ -229,7 +230,7 @@ input[type=submit] {
   animation-iteration-count: infinite;
 }
 
-/* only occurs on index page */
+/* this animation only occurs on index page */
 @keyframes tumbleNavLinks {
   0% {
     transform: rotate(0deg);
@@ -256,6 +257,29 @@ input[type=submit] {
   animation-duration: 5s;
 
 }
+
+/* this animation only occurs on portfolio page */
+@keyframes fadingCaptions {
+  from {
+    opacity: 1;
+    background: #4aaaa5;}
+  to {
+    opacity: 0.4;
+    background: blue;}
+}
+
+
+
+#animateOpacity {
+  animation-name: fadingCaptions;
+  animation-duration: 5s;
+  animation-iteration-count: 4;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+
+
 
 /*=-------- media queries below  */
 
