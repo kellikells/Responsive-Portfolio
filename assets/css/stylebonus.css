@@ -229,6 +229,33 @@ input[type=submit] {
   animation-iteration-count: infinite;
 }
 
+/* only occurs on index page */
+@keyframes tumbleNavLinks {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-369deg);
+  }
+}
+
+.tumbleFirst {
+  animation-name: tumbleNavLinks;
+  animation-duration: 5s;
+
+}
 
 /*=-------- media queries below  */
 
